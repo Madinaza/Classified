@@ -1,0 +1,195 @@
+@import './variables';
+@import './mixin';
+@import './resseting';
+
+.about-part {
+    padding: 100px 0px 0px;
+    .about-content {
+        margin-bottom: 30px;
+        h2 {
+            margin-bottom: 32px;
+            color: $header;
+            font-size: 38px;
+            line-height: 46px;
+            font-weight: 700;
+            @include responsive(548px){
+                font-size: 25px;
+              line-height: 32px;
+            }
+        }
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            @include responsive(548px){
+                font-size: 15px;
+              line-height: 28px;
+            }
+        }
+    }
+    .about-quote {
+        padding: 40px 40px;
+        border-radius: 8px;
+        border-left: 5px solid $primary;
+        box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.15);
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 25px;
+        }
+        h5 {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 500;
+            color: $header;
+            span{
+                color: $primary;
+            }
+        }
+
+    }
+    .about-image {
+        margin-left: 20px;
+        @include responsive(992px){
+            margin-top: 50px;
+            margin-left: 0px;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.best-part {
+    padding: 90px 0px 0px;
+      @include responsive(768px){
+      padding: 0px;
+    }
+    .section-center-heading {
+        text-align: center;
+        margin-bottom: 45px;
+        @include responsive(768px){
+           text-align: start;
+          }
+        h2 {
+            margin-bottom: 15px;
+            @include responsive(768px){
+             font-size: 30px;
+             width: 100%;
+              }
+        }
+        p {
+           
+            width: 60%;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 28px;
+            @include responsive(768px){
+                font-size: 14px;
+                width: 100%;
+              }
+        }
+    }
+    .best-card {
+        display: flex;
+        margin: 0px 15px 50px 0px;
+        &:hover{
+            .best-icon{
+                i{
+                    background-color: $primary;
+                    color: #fff;
+                }
+            }
+        }
+        .best-icon{
+            i {
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                border-radius: 50%;
+                background: $chalk;
+                color: $header;
+                font-size: 18px;
+                margin-right: 25px;
+                transition: all linear .3s;
+              
+            }
+        }
+        .best-content{
+            h4 {
+                text-transform: capitalize;
+                margin-bottom: 15px;
+                font-size: 20px;
+               line-height: 28px;
+              font-weight: 700;
+              color: $header;
+
+            }
+        }
+    }
+}
+
+.counter-part {
+    margin-top: 55px;
+    padding: 100px 0px;
+    background: linear-gradient(rgba(117,168,255,0.1), rgba(0,69,187,0.1));
+    @include responsive(768px){
+padding: 80px 0px 50px;
+    }
+    .counter-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include responsive(768px){
+            margin-bottom: 45px;
+         
+        }
+        .counter-image{
+                img {
+                    width: 60px;
+                    margin-right: 30px;
+                    @include responsive(992px){
+                        width: 40px;
+                    }
+                    @include responsive(768px){
+                        width: 80px;
+                    }
+                }
+        }
+        .counter-content {
+            text-align: left;
+            h2{
+                font-size: 38px;
+                font-weight: 700;
+                color: $header;
+                @include responsive(992px){
+                    font-size: 33px;
+                }
+            }
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: capitalize;
+                @include responsive(992px){
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+//////////checkoutpart
+.checkout{
+    margin: 80px 50px;
+    @include responsive(548px){
+        margin: 20px 0px;
+    }
+    .btn{
+        background: $primary;
+        color: #fff;
+    }
+}
+
